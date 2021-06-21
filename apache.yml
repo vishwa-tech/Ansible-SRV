@@ -1,0 +1,9 @@
+------
+- hosts: webserver
+  become: true
+tasks: 
+-name: install packages
+yum:
+name: "httpd"
+state: "persent"
+- name: start apache server
